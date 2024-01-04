@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "7743F83E-9F18-4AAF-86A6-8D7B337F8D95",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "UtilityTools",
+          "name" : "UtilityTools"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "UtilityToolsTests",
+        "name" : "UtilityToolsTests"
+      }
+    }
+  ],
+  "version" : 1
+}

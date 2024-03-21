@@ -4,13 +4,13 @@ import PackageDescription
 let package = Package(
     name: "UtilityTools",
     platforms: [
-        .iOS(.v15),
-        .macCatalyst(.v15),
-        .macOS(.v12),
-        .tvOS(.v15),
-        .driverKit(.v21),
+        .iOS(.v17),
+        .macCatalyst(.v17),
+        .macOS(.v14),
+        .tvOS(.v17),
+        .driverKit(.v23),
         .visionOS(.v1),
-        .watchOS(.v8)
+        .watchOS(.v10)
     ],
     products: [
         .library(

@@ -1,6 +1,3 @@
-Certainly! Here's the updated README file with the SSH URL for downloading the SPM:
-
-```markdown
 # UtilityTools
 
 UtilityTools is a Swift Package Manager (SPM) package that provides day-to-day extensions and convenient code snippets to accelerate your development process. Initially focused on date-related utilities, the package is designed to expand and incorporate more tools over time.
@@ -9,22 +6,27 @@ UtilityTools is a Swift Package Manager (SPM) package that provides day-to-day e
 
 ### Swift Package Manager
 
-Add the following dependency to your `Package.swift` file:
+To integrate this library into your Xcode project using Swift Package Manager, follow these steps:
+
+1. Open your Xcode project.
+2. Navigate to the menu `File > Swift Packages > Add Package Dependency...`.
+3. Enter the following URL of this repository: `git@github.com:VictorKreniski/UtilityTools.git`.
+4. Click **Next** and select the version or branch you want to use.
+5. Click **Next** and then **Finish**.
+
+The library will be automatically resolved and linked with your Xcode project.
+
+## Usage
+
+Once you've added the package to your project, you can start using the networking capabilities.
+
+### Import the Library
+
+In the Swift file where you want to use the networking library, import it at the top:
 
 ```swift
-dependencies: [
-    .package(url: "git@github.com:VictorKreniski/UtilityTools.git", from: "1.0.0")
-],
-targets: [
-    .target(
-        name: "YourProjectName",
-        dependencies: ["UtilityTools"]
-    ),
-    // ...
-]
+import UtilityTools
 ```
-
-Replace `"YourProjectName"` with your actual project name, and make sure to use the correct version or the desired version range (`from: "1.0.0"`).
 
 ## Features
 

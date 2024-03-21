@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     var inverted: Self {
         get { !self }
         set { self = !newValue }

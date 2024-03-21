@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AsyncButton<S: View, L: View>: View {
+public struct AsyncButton<S: View, L: View>: View {
     
     private let action: () async -> Void
     private let label: S
@@ -15,7 +15,7 @@ struct AsyncButton<S: View, L: View>: View {
     
     @State private var task: Task<(), Never>?
     
-    var body: some View {
+    public var body: some View {
         Button {
             guard task == nil else { return }
             task = Task {
@@ -31,7 +31,7 @@ struct AsyncButton<S: View, L: View>: View {
         .allowsHitTesting(task == nil)
     }
     
-    init(
+    public init(
         action: @escaping () async -> Void,
         @ViewBuilder label: @escaping () -> S,
         @ViewBuilder loading: @escaping () -> L
